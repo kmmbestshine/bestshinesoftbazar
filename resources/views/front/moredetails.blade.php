@@ -18,12 +18,18 @@
                     <p>Website :</p>
 
                     <h2 class="city">{{ $product->website }}</h2>
-                    <p>YouTube Channel :</p>
-
-                    <h2 class="city">{{ $product->youtube }}</h2>
+                    
                     <p>Price :</p>
 
                     <h2 class="city">{{ $product->studentprice }}</h2>
+                    <h2 class="city">
+                      Youtube Channel :
+                      @if($product->video_site_link)
+                        <a href="{{$product->video_site_link}}" class="cws-button bt-color-3 border-radius alt icon-right float-right">@lang('About Us More2')
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      @endif
+                    </h2>
                 </div>
             </div>
         </div>

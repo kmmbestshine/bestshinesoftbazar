@@ -96,6 +96,8 @@ class ProductController extends Controller
             'full_descript' => $request->description,
             'image' => $request->image->getClientOriginalName(),
             'mul_images' => implode("|",$images),
+            'intro_video_embed_code' => $request->intro_video_embed_code,
+            'video_site_link' => $request->video_site_link,
             'website' => $request->webste,
             'youtube' => $request->youtube_url,
             'studentprice' => $request->studentprice,

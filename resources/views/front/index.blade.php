@@ -16,9 +16,10 @@
     <div class="row text-center">
 
     @foreach ($products as $product)
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-6 col-md-6 mb-4">
             <div class="card">
-                <img class="card-img-top" src="{{ url('/uploads') . '/' . $product->image }}" alt="">
+                {{--<img class="card-img-top" src="{{ url('/uploads') . '/' . $product->image }}" alt="">--}}
+                {!! $product->intro_video_embed_code !!}
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->name }}</h5>
                     <p class="card-text">
