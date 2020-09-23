@@ -1,6 +1,6 @@
 @extends('backend.layouts.master')
 @section('title')
-    PKS Bazar Dashboard Page
+    Software Bazar Dashboard Page
 @endsection
 @section('css')
     <link rel="stylesheet" href="{{asset('backend/plugins/select2.min.css')}}">
