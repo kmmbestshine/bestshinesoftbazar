@@ -5,9 +5,9 @@
        
   <header class="jumbotron my-4">
 <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="assets/img/banner1.png" style="width:210% ">
-  <img class="mySlides" src="assets/img/banner2.png" style="width:210%">
-  
+  <img class="mySlides" src="assets/img/banner2.png" style="width:210% ">
+  <img class="mySlides" src="assets/img/banner4.png" style="width:210%">
+  <img class="mySlides" src="assets/img/banner21.png" style="width:210%">
 </div>
 </header>
 </header>
