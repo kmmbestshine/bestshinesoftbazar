@@ -2,17 +2,24 @@
 
 @section('content')
     <!-- Jumbotron Header -->
-        <header class="jumbotron my-4">
+         {{--<header class="jumbotron my-4">
             <h5 class="display-3"><strong>Welcome,</strong></h5>
             <p class="display-4"><strong>SALE UPTO 50%</strong></p>
             <p class="display-4">&nbsp;</p>
             <a href="#" class="btn btn-warning btn-lg float-right">SHOP NOW!</a>
+        </header>--}}
+         <header class="jumbotron my-4">
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides" src="assets/img/banner.png" style="width:210% ">
+          <img class="mySlides" src="assets/img/banner2.png" style="width:210%">
+          
+        </div>
         </header>
     @if ( session()->has('msg') )
         <div class="alert alert-success">{{ session()->get('msg') }}</div>
     @endif
 
-
+    <h2 class="w3-center" align="center">All Software Of {{$category->name}} </h2>
     <div class="row text-center">
 
     @foreach ($products as $product)
@@ -43,8 +50,21 @@
         </div>
 
         @endforeach
-    
-       
-
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
 @endsection
