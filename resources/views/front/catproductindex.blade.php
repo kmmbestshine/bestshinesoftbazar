@@ -12,6 +12,7 @@
         <div class="w3-content w3-section" style="max-width:500px">
           <img class="mySlides" src="assets/img/banner.png" style="width:210% ">
           <img class="mySlides" src="assets/img/banner2.png" style="width:210%">
+          <img class="mySlides" src="assets/img/banner3.jpg" style="width:210%">
           
         </div>
         </header>
